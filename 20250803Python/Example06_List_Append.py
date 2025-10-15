@@ -1,3 +1,9 @@
+'''
+程式大綱：
+1) 串列(/陣列)宣告 
+2) 於串列的尾端新增元素 append
+'''
+
 # other = ['John', True, False, 111, 0.23]
 # 
 # for i in range(5) :
@@ -21,8 +27,8 @@ students = list()
 for i in range(5) :
     name = input("輸入學生姓名：")
     students.append(name)
-    
-    
+        
 print(students)
+
 
 ##---------------------------
