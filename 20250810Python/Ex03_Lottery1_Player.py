@@ -1,3 +1,8 @@
+'''
+程式大綱：大樂透 Part1
+自選5個號碼(1~49)，不重覆
+'''
+
 myNumber = []
 
 while len(myNumber) < 6 :
@@ -15,4 +20,5 @@ while len(myNumber) < 6 :
                
 
 print('你選的號碼：',myNumber)
+
         
