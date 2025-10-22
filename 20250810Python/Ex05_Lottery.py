@@ -1,3 +1,10 @@
+'''
+程式大綱：大樂透 Part3 (合併 Ex03_Lottery1_Player.py 與 Ex04_Lottery2_Computer.py)
+玩家自選6個號碼
+電腦開出6個號碼
+及2種兌獎功能 
+'''
+
 import random   # 匯入 亂數 函式庫
 
 com = []        # 串列：大樂透開獎號碼
@@ -30,7 +37,7 @@ print('你選的號碼：',myNumber)
 
 print('開獎號碼：',com)
 
-## 兌獎 第一種方式
+## 兌獎 第一種方式：com.count(myn)
 total = 0
 for i in range(6):
     myn = myNumber[i]
@@ -41,7 +48,7 @@ for i in range(6):
 print('中獎數量：',total)
 
 
-## 兌獎 第二種方式
+## 兌獎 第二種方式：if i in com
 total = 0
 for i in myNumber:
     if i in com:  # 在 if 中用 in  表示是否包含 => i 變數內容是否有在 com 裡面
@@ -54,6 +61,7 @@ print('中獎數量：',total)
 
     
     
+
 
 
 
