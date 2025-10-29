@@ -2,10 +2,10 @@ from datetime import datetime
 ## 正規表達式 import re
 
 current_Time = datetime.now()		# 抓取目前的時間
-print(current_Time)
+print(current_Time)                 # 2025-10-29 07:17:07.756948
 
 today = datetime.today()			# 抓取目前的時間
-print(today)
+print(today)                        # 2025-10-29 07:17:07.756979
 
 ##-----將時間轉字串 (f = 格式化)-----
 date_only = today.strftime("%Y-%m-%d")		# yyyy-mm-dd (%y == yy)
@@ -46,3 +46,4 @@ while name != 'q' :
 ## f：格式化；在字串前加 f 表示裡面會有格式化參數
 print(f'共有{len(people)}人，為：{people}')
         
+
