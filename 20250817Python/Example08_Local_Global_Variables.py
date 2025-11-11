@@ -1,3 +1,9 @@
+'''
+程式大綱：
+1) 區域變數
+2) 全域變數 Global
+'''
+
 x = 10
 y = 100
 
@@ -20,13 +26,13 @@ def changeY(n):
     print('changeY=', y)
 
 
-print('x=', x)
-changeX(100)
-print('x=', x)
+print('x=', x)        # x= 10
+changeX(100)          # changeX= 100
+print('x=', x)        # X= 10
 
-circle()
+circle()              # 圓面積：314.0
 
 print()
-print('Y=', y)
-changeY(199)
-print('Y=', y)
+print('Y=', y)        # Y= 100
+changeY(199)          # changeY= 199
+print('Y=', y)        # Y= 199
