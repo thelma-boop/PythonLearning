@@ -34,6 +34,16 @@ if __name__ == '__main__':
 
 
 '''
+直接執行 "Fun_Ex07.py" 時，
+> 執行結果：
+你好            ## from Fun.py
+Hello           ## from Fun.py
+30 最大         ## from Fun.py
+面積： 200      ## from Fun.py
+'''
+
+
+'''
 此處若沒有加上「if __name__ == '__main__':」，
 當Ex07.py 引用 Fun.py 時，
 執行後，亦會將 Fun.py 本身呼叫函式之結果顯示出來
@@ -46,7 +56,6 @@ Hello           ## from Fun.py
 Hello          ## from Ex07.py
 20 最大         ## from Ex07.py
 '''
-
 
 
 '''
@@ -66,3 +75,4 @@ Hello          ## from Ex07.py
 
 
     
+
