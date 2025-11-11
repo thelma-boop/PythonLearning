@@ -1,6 +1,6 @@
 '''
 程式大綱：
-1) dict.setdefault(Key,Value)
+1) dict.setdefault(Key,Value)：為 字典 新增「預設值」；Value 的預設值為 None、原本字典裡沒有時，就新增、字典原本就有，則不變
 2) dict.pop(Key)：從 字典 裡，拿走 Key 且不放回，回傳此 Key 的值
 3) dict.clear()：將 字典 清空
 4) 字典表達示：Dictionary Comprehension
@@ -8,6 +8,7 @@
            。dictionary = {key: value for vars in iterable}
            。dictionary = {key: value for k:v in dict.items()}
            。dictionary = {key: value for k:v in dict.items() if condition}
+5) sorted
            
            參考：https://www.programiz.com/python-programming/dictionary-comprehension
 '''
@@ -81,13 +82,14 @@ print(max_score)
 '''
 print('-'*20, 'lambda', '-'*20)
 print('遞增排序')
-asc_score = sorted(score.items(), key = lambda item:item[1])
-print(asc_score)
+asc_score = sorted(score.items(), key = lambda item:item[1])                            # sorted(待排列項目, key = 排序方法為dict的value, 遞增排序)
+print(asc_score)                            # [('Bill', 45), ('John', 55), ('Sue', 70), ('Tom', 80), ('Mary', 90)]
 
 print()
 
 print('遞減排序')
-desc_score = sorted(score.items(), key = lambda item:item[1], reverse = True)
-print(desc_score)
+desc_score = sorted(score.items(), key = lambda item:item[1], reverse = True)           # sorted(待排列項目, key = 排序方法為dict的value, 遞增排序)
+print(desc_score)                           # [('Mary', 90), ('Tom', 80), ('Sue', 70), ('John', 55), ('Bill', 45)]
 
 '''
+
