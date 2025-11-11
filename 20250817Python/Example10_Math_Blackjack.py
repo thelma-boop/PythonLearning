@@ -1,3 +1,9 @@
+'''
+程式大綱：
+1) math函式庫常用函式
+2) 遊戲21點 (Blackjack)
+'''
+
 import math
 import random
 
@@ -16,7 +22,7 @@ score = [10,20,30,40,50,60]
 ##-----應用-----
 cards = []
 
-## 撲克牌有52張，每一花色都有13張 
+## 產生撲克牌：撲克牌有52張，每一花色都有13張 
 for i in range(4):
     for y in range(1,14):
         cards.append(y)
@@ -33,6 +39,7 @@ def givePoint():
 
 ## 洗牌
 def washCard(cards):
+    ## 洗 200 遍
     for i in range(200):
         f = random.randint(0, len(cards)-1) # 0~51 間，隨意取一整數值
         e = random.randint(0, len(cards)-1)
@@ -139,4 +146,5 @@ while myMoney > 0:
     
     
     
+
     
